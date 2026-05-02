@@ -10,6 +10,24 @@ export type TranslationKey =
   | 'nav.testimonials'
   | 'nav.contact'
   | 'nav.order'
+  // Trust System
+  | 'trust.satisfied'
+  | 'trust.delivery'
+  | 'trust.deliveryZone'
+  | 'trust.time'
+  | 'trust.timeValue'
+  // Cart
+  | 'cart.title'
+  | 'cart.empty'
+  | 'cart.add'
+  | 'cart.remove'
+  | 'cart.total'
+  | 'cart.checkout'
+  | 'cart.address'
+  | 'cart.addressPlaceholder'
+  // Menu Tags
+  | 'menu.tag.bestSeller'
+  | 'menu.tag.recommended'
   // Menu
   | 'menu.title'
   | 'menu.subtitle'
@@ -91,22 +109,22 @@ export const translations: Record<'en' | 'es', Record<TranslationKey, string>> =
     'menu.mostPopular': 'Most Popular',
     'menu.item1.name': 'Truffle Pasta',
     'menu.item1.desc': 'Handmade pasta with black truffle, Parmesan cream, and herbs.',
-    'menu.item1.price': '$24.99',
+    'menu.item1.price': '615',
     'menu.item2.name': 'Grilled Salmon',
     'menu.item2.desc': 'Atlantic salmon with lemon butter sauce and seasonal vegetables.',
-    'menu.item2.price': '$28.50',
+    'menu.item2.price': '700',
     'menu.item3.name': 'Wagyu Burger',
     'menu.item3.desc': 'Prime wagyu beef with aged cheddar, truffle aioli, and brioche bun.',
-    'menu.item3.price': '$32.00',
+    'menu.item3.price': '785',
     'menu.item4.name': 'Caesar Salad',
     'menu.item4.desc': 'Crisp romaine, homemade croutons, Parmesan, and classic Caesar dressing.',
-    'menu.item4.price': '$16.75',
+    'menu.item4.price': '410',
     'menu.item5.name': 'Chocolate Lava Cake',
     'menu.item5.desc': 'Warm chocolate cake with a molten center, served with vanilla ice cream.',
-    'menu.item5.price': '$12.99',
+    'menu.item5.price': '320',
     'menu.item6.name': 'Craft Cocktails',
     'menu.item6.desc': 'Signature cocktails crafted by our expert mixologists.',
-    'menu.item6.price': '$14.50',
+    'menu.item6.price': '355',
     'testimonials.title': 'What Our Guests Say',
     'testimonials.subtitle': 'Rated 4.9/5 by over 500 customers',
     'testimonials.review1.text': 'The best dining experience I’ve had this year. The attention to detail is incredible.',
@@ -142,6 +160,21 @@ export const translations: Record<'en' | 'es', Record<TranslationKey, string>> =
     'common.loading': 'Loading...',
     'common.error': 'Something went wrong',
     'common.success': 'Success!',
+    'trust.satisfied': 'Satisfied Clients',
+    'trust.delivery': 'Express Delivery',
+    'trust.deliveryZone': 'Delivery in [Zone Name]',
+    'trust.time': 'Estimated Time',
+    'trust.timeValue': '25-40 min',
+    'cart.title': 'Your Order',
+    'cart.empty': 'Your cart is empty',
+    'cart.add': 'Add to Order',
+    'cart.remove': 'Remove',
+    'cart.total': 'Total',
+    'cart.checkout': 'Confirm via WhatsApp',
+    'cart.address': 'Delivery Address',
+    'cart.addressPlaceholder': 'Enter your address for delivery',
+    'menu.tag.bestSeller': 'Best Seller',
+    'menu.tag.recommended': 'Recommended',
   },
   es: {
     'hero.title': 'Experiencia Gastronómica Premium',
@@ -158,22 +191,22 @@ export const translations: Record<'en' | 'es', Record<TranslationKey, string>> =
     'menu.mostPopular': 'Más Popular',
     'menu.item1.name': 'Pasta con Trufa',
     'menu.item1.desc': 'Pasta artesanal con trufa negra, crema de parmesano y hierbas.',
-    'menu.item1.price': '$24.99',
+    'menu.item1.price': '615',
     'menu.item2.name': 'Salmón a la Parrilla',
     'menu.item2.desc': 'Salmón del Atlántico con salsa de mantequilla de limón y verduras de temporada.',
-    'menu.item2.price': '$28.50',
+    'menu.item2.price': '700',
     'menu.item3.name': 'Hamburguesa Wagyu',
     'menu.item3.desc': 'Carne de wagyu prime con cheddar añejo, alioli de trufa y pan brioche.',
-    'menu.item3.price': '$32.00',
+    'menu.item3.price': '785',
     'menu.item4.name': 'Ensalada César',
     'menu.item4.desc': 'Lechuga romana crujiente, crutones caseros, parmesano y aderezo César clásico.',
-    'menu.item4.price': '$16.75',
+    'menu.item4.price': '410',
     'menu.item5.name': 'Pastel de Chocolate Lava',
     'menu.item5.desc': 'Pastel de chocolate caliente con centro derretido, servido con helado de vainilla.',
-    'menu.item5.price': '$12.99',
+    'menu.item5.price': '320',
     'menu.item6.name': 'Cócteles Artesanales',
     'menu.item6.desc': 'Cócteles signature creados por nuestros expertos mixólogos.',
-    'menu.item6.price': '$14.50',
+    'menu.item6.price': '355',
     'testimonials.title': 'Lo Que Dicen Nuestros Clientes',
     'testimonials.subtitle': 'Calificado 4.9/5 por más de 500 clientes',
     'testimonials.review1.text': 'La mejor experiencia gastronómica que he tenido este año. La atención al detalle es increíble.',
@@ -209,5 +242,20 @@ export const translations: Record<'en' | 'es', Record<TranslationKey, string>> =
     'common.loading': 'Cargando...',
     'common.error': 'Algo salió mal',
     'common.success': '¡Éxito!',
+    'trust.satisfied': 'Clientes Satisfechos',
+    'trust.delivery': 'Entrega Express',
+    'trust.deliveryZone': 'Entrega en toda [Zona]',
+    'trust.time': 'Tiempo Estimado',
+    'trust.timeValue': '25-40 min',
+    'cart.title': 'Tu Pedido',
+    'cart.empty': 'Tu carrito está vacío',
+    'cart.add': 'Agregar al Pedido',
+    'cart.remove': 'Quitar',
+    'cart.total': 'Total',
+    'cart.checkout': 'Confirmar por WhatsApp',
+    'cart.address': 'Dirección de Entrega',
+    'cart.addressPlaceholder': 'Ingresa tu dirección para el envío',
+    'menu.tag.bestSeller': '🔥 Más vendido',
+    'menu.tag.recommended': '⭐ Recomendado',
   },
 };

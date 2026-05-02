@@ -40,7 +40,7 @@
   --secondary-foreground: 0 0% 100%;
   
   --muted: 0 0% 96%; /* Very light gray/red tint */
-  --muted-foreground: 0 0% 40%;
+  --muted-foreground: 0 0% 20%;
   
   --accent: 0 100% 98%; /* FEF2F2 */
   --accent-foreground: 0 72.2% 50.6%;
@@ -104,4 +104,15 @@ h1, h2, h3, h4, h5, h6, .heading-font {
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
 }

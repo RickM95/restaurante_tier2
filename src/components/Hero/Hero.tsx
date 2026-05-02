@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              <span className="text-sm font-semibold tracking-wider uppercase text-foreground/90">{t('hero.subtitle')}</span>
+              <span className="text-sm font-semibold tracking-wider uppercase text-foreground">{t('hero.subtitle')}</span>
             </div>
             <h1 className="heading-font text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               {t('hero.title')}
@@ -45,16 +45,16 @@ export const Hero: React.FC = () => {
             </div>
             {/* Trust badges */}
             <div className="flex flex-wrap items-center gap-8 mt-12">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary">4.9</div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary">4.9</div>
                 <div className="text-muted-foreground text-sm uppercase tracking-wider mt-1">Google Rating</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary">500+</div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary">500+</div>
                 <div className="text-muted-foreground text-sm uppercase tracking-wider mt-1">Happy Customers</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary">15</div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary">15</div>
                 <div className="text-muted-foreground text-sm uppercase tracking-wider mt-1">Years Experience</div>
               </div>
             </div>
@@ -66,6 +66,7 @@ export const Hero: React.FC = () => {
               <img
                 src={heroImg}
                 alt="Restaurant interior"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

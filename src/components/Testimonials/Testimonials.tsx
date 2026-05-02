@@ -31,7 +31,7 @@ export const Testimonials: React.FC = () => {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 relative group"
+              className="bg-white dark:bg-card border border-border rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300 relative group shadow-lg"
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-primary/10 to-transparent rounded-tr-2xl z-0" />
               
@@ -50,7 +50,7 @@ export const Testimonials: React.FC = () => {
               </div>
 
               {/* Review text */}
-              <blockquote className="text-foreground text-lg italic mb-8 relative z-10">
+              <blockquote className="text-foreground text-lg italic mb-8 relative z-10 leading-relaxed font-medium">
                 "{t(`testimonials.review${review.id}.text` as any)}"
               </blockquote>
 
@@ -58,10 +58,10 @@ export const Testimonials: React.FC = () => {
               <div className="flex items-center gap-4 relative z-10">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary shadow-inner" />
                 <div>
-                  <div className="font-bold text-foreground">
+                  <div className="font-bold text-foreground text-lg">
                     {t(`testimonials.review${review.id}.author` as any)}
                   </div>
-                  <div className="text-primary text-sm font-semibold uppercase tracking-wider">Verified Customer</div>
+                  <div className="text-primary text-sm font-bold uppercase tracking-widest">Verified Customer</div>
                 </div>
               </div>
             </div>
@@ -76,10 +76,10 @@ export const Testimonials: React.FC = () => {
             { metric: '15', label: 'Years Experience' },
             { metric: '100%', label: 'Satisfaction Guarantee' }
           ].map((badge, idx) => (
-            <div key={idx} className="text-center p-6 glass-panel rounded-2xl relative overflow-hidden group hover:-translate-y-1 transition-all duration-300">
+            <div key={idx} className="text-center p-6 bg-white dark:bg-card border border-border rounded-2xl relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 shadow-md">
               <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="heading-font text-4xl font-bold text-primary mb-2 relative z-10">{badge.metric}</div>
-              <div className="text-muted-foreground text-sm uppercase tracking-wider font-semibold relative z-10">{badge.label}</div>
+              <div className="text-foreground dark:text-muted-foreground text-sm uppercase tracking-wider font-bold relative z-10">{badge.label}</div>
             </div>
           ))}
         </div>

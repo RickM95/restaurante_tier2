@@ -8,9 +8,12 @@ import { OrderSection } from './components/Order/OrderSection';
 import { Footer } from './components/Layout/Footer';
 import { StickyCTA } from './components/Layout/StickyCTA';
 
+import { CurrencyTicker } from './contexts/CurrencyContext';
+
 function App() {
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+      <CurrencyTicker />
       <Header />
       <main>
         <Hero />

@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
-            <p className="mt-12 text-sm text-muted-foreground/60 font-light">
+            <p className="mt-12 text-sm text-muted-foreground font-light">
               {t('footer.copyright')}
             </p>
           </div>
